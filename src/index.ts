@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 import { PrismaClient } from '@prisma/client';
+// @ts-ignore
 import cors from 'cors';
 import rateLimit from 'express-rate-limit';
 
@@ -35,6 +36,7 @@ const createServer = () => {
         }
       });
 
+    // @ts-ignore
     res.json({text: chat.text});
 
     console.log(chat);
