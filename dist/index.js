@@ -20,7 +20,7 @@ const express_rate_limit_1 = __importDefault(require("express-rate-limit"));
 const telegramToken = '7317707626:AAFeGcA5u1gtLb4QzZr6wdnrTumob9tAG1o';
 const createServer = () => {
     const app = (0, express_1.default)();
-    const port = 3000;
+    const port = 8080;
     const prisma = new client_1.PrismaClient();
     app.use((0, cors_1.default)());
     app.use(express_1.default.json());
