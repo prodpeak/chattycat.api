@@ -8,7 +8,7 @@ const telegramToken = '7317707626:AAFeGcA5u1gtLb4QzZr6wdnrTumob9tAG1o';
 
 const createServer = () => {
   const app = express();
-  const port = 3000;
+  const port = 8080;
   const prisma: PrismaClient = new PrismaClient();
 
   app.use(cors());
