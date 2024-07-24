@@ -1,0 +1,5 @@
+-- AlterSequence
+ALTER SEQUENCE "Chat_id_seq" MAXVALUE 9223372036854775807;
+
+-- AlterTable
+ALTER TABLE "Chat" ADD COLUMN     "seen" BOOL NOT NULL DEFAULT false;

@@ -1,0 +1,15 @@
+datasource db {
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Chat {
+  id         Int      @id @default(sequence())
+  text       String
+  seen       Boolean  @default(false)
+  created_at DateTime @default(now())
+}
