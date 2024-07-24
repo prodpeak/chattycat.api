@@ -1,6 +1,6 @@
 datasource db {
   provider = "cockroachdb"
-  url      = env("DATABASE_URL")
+  url      = "postgresql://chattycat:ixU3IijzJmjJP06oF7npEg@main-lamb-15477.7tt.aws-us-east-1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full"
 }
 
 generator client {
